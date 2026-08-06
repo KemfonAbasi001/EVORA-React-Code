@@ -104,7 +104,7 @@ export default function About() {
   return (
     <>
       <OurVehicles />
-      <CompareVehicles />
+      {/* <CompareVehicles /> */}
     </>
   );
 }

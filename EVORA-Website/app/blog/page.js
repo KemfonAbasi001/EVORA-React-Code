@@ -233,7 +233,7 @@ export default function About() {
       <CompLanding/>
       <OurVehicles />
       <LatestUpdate />
-      <CompareVehicles />
+      {/* <CompareVehicles /> */}
     </>
   );
 }

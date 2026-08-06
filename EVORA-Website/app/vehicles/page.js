@@ -247,7 +247,7 @@ export default function About() {
     <>
       <CompLanding/>
       <OurVehicles />
-      <CompareVehicles />
+      {/* <CompareVehicles /> */}
     </>
   );
 }
