@@ -9,6 +9,7 @@ import four from '../app/imgfour.png'
 import neww from '../app/new.png'
 
 import { ChevronRight, CircleGauge, MoveRight, Zap } from "lucide-react";
+import CompareVehicles from "@/components/layout/CTA -Section";
 
 
 
@@ -225,6 +226,8 @@ export default function Home() {
       <SubLand/>
       <Explore />
       <Why />
+      {/* import CompareVehicles from "@/components/layout/CTA -Section"; */}
+      <CompareVehicles/>
     </>
   );
 }

@@ -123,6 +123,8 @@ import two from '../../app/imgtwo.png'
 // import three from '../../app/imgthree.png'
 import four from '../../app/imgfourr.png'
 
+import CompareVehicles from "@/components/layout/CTA -Section";
+
 import neww from '../../app/imgten.png'
 
 import { ChevronRight, CircleGauge, MoveRight, Zap } from "lucide-react";
@@ -234,27 +236,6 @@ function CompLanding() {
   );
 }
 
-
-function CompareVehicles() {
-  return(
-    <section className="w-full flex justify-center items-center py-10 bg-[#f9fafb]">
-      <div className="w-[95%] flex flex-col gap-10 lg:flex-row justify-between py-8 rounded-2xl px-6 lg:px-12 lg:items-center" id="lau">
-        <div className="flex gap-3 flex-col w-full">
-          <h1 className="text-[18px] font-semibold">Compare Models</h1>
-          <p className="text-[15px]">Find the perfect EV for your needs</p>
-          <button className="bg-[#10b981] py-2.75 w-fit px-5 rounded-[6px] text-[15px] lg:text-[14px] text-[#f9fafb] font-medium">
-            Compare model
-          </button>
-        </div>
-        <Image
-          src={neww}
-          alt="Electric vehicle"
-          className="w-[100%] sm:w-[65%] lg:w-[30%]"
-        />
-      </div>
-    </section>
-  );
-}
 
 
 function TeamSection() {

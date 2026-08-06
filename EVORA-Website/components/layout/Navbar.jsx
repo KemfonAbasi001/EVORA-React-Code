@@ -233,10 +233,10 @@ export default function Navbar() {
           <Link href="/vehicles" className={linkClass("/vehicles", "flex items-center gap-0.75")}>
             Vehicles <ChevronDown size={20} />
           </Link>
-          <Link href="/about" className={linkClass("/about", "flex items-center gap-0.75")}>
+          <Link href="/charging" className={linkClass("/charging", "flex items-center gap-0.75")}>
             Charging <ChevronDown size={20} />
           </Link>
-          <Link href="/about" className={linkClass("/about", "flex items-center gap-0.75")}>
+          <Link href="/solution" className={linkClass("/solution", "flex items-center gap-0.75")}>
             Solutions <ChevronDown size={20} />
           </Link>
           <Link href="/about" className={linkClass("/about")}>About Us</Link>
@@ -277,28 +277,29 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/about"
-              className={linkClass("/about", "flex justify-between items-center")}
+              href="/charging"
+              className={linkClass("/charging", "flex justify-between items-center")}
               onClick={closeMenu}
             >
               Charging <ChevronDown size={18} />
             </Link>
 
             <Link
-              href="/about"
-              className={linkClass("/about", "flex justify-between items-center")}
+              href="/solution"
+              className={linkClass("/solution", "flex justify-between items-center")}
               onClick={closeMenu}
             >
-              Solutions <ChevronDown size={18} />
+              Solution <ChevronDown size={18} />
             </Link>
 
             <Link href="/about" onClick={closeMenu} className={linkClass("/about")}>
               About Us
             </Link>
-            {/* Mobile nav */}
-<Link href="/blog" onClick={closeMenu} className={linkClass("/blog")}>
-  Blog
-</Link>
+
+            <Link href="/blog" onClick={closeMenu} className={linkClass("/blog")}>
+              Blog
+            </Link>
+
             <Link href="/contact" onClick={closeMenu} className={linkClass("/contact")}>
               Contact
             </Link>
