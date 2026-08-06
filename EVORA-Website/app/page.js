@@ -177,22 +177,22 @@ function LandingPage() {
     >
       <div className="w-[93%] flex flex-col lg:flex-row lg:justify-between items-center gap-12 lg:gap-0">
         <div className="gap-2.5 flex flex-col text-center lg:text-left items-center lg:items-start">
-          <p>100% Electric</p>
-          <h1 className="text-[32px] leading-[38px] sm:text-[42px] sm:leading-[48px] lg:text-[53px] lg:leading-[60px] font-semibold text-[#111827]">
+          <p className="text-black flex gap-1.5 justify-center items-center bg-[#f3f4f6] text-[15px] py-1.75 rounded-2xl px-3"><Zap className="text-[#16a34a]" /> 100% Electric</p>
+          <h1 className="text-[38px] leading-[48px] lg:text-[53px] lg:leading-[60px] font-semibold text-[#111827]">
             Drive the Future.
             <br />
             <span className="text-[#16a34a]">Sustain the World.</span>
           </h1>
-          <p className="text-[16px] sm:text-[19px] text-[#111827]">
+          <p className="text-[18px] text-[#111827]">
             Smart. Connected. Sustainable.
             <br />
             Electric mobility for a cleaner tomorrow.
           </p>
           <div className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-5 mt-2">
-            <button className="bg-[#10b981] py-2.75 px-5 rounded-[6px] text-[14px] font-medium">
+            <button className="bg-[#10b981] py-2.75 px-5 rounded-[6px] text-[15px] lg:text-[14px] font-medium">
               Explore Vehicles
             </button>
-            <button className="py-2.75 px-5 border border-solid border-[#374151] text-[14px] font-medium rounded-[6px] text-[#111827]">
+            <button className="py-2.75 px-5 border border-solid border-[#374151] text-[15px] lg:text-[14px] font-medium rounded-[6px] text-[#111827]">
               Find a Dealer
             </button>
           </div>
@@ -200,7 +200,7 @@ function LandingPage() {
         <Image
           src={neww}
           alt="Electric vehicle"
-          className="w-[80%] sm:w-[65%] lg:w-[48%]"
+          className="w-[90%] sm:w-[65%] lg:w-[48%]"
         />
       </div>
     </section>
