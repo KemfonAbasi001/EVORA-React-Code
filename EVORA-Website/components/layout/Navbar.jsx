@@ -79,21 +79,13 @@ export default function Navbar() {
             Book a Test Ride
           </Link>
 
-          <div className="mt-auto pb-6">
-            <p className="text-gray-500 text-sm mb-3">Follow Us</p>
+          <div className="mt-auto pb-6 pt-5 border-x-0 border-b-0 border-t border-solid">
+            <p className="text-[#111827] text-[20px] mb-3">Follow Us</p>
             <div className="flex gap-3">
-              <span className="w-9 h-9 rounded-full bg-black flex items-center justify-center">
-                <FontAwesomeIcon icon={faFacebookF} className="text-white text-[14px]" />
-              </span>
-              <span className="w-9 h-9 rounded-full bg-black flex items-center justify-center">
-                <FontAwesomeIcon icon={faInstagram} className="text-white text-[14px]" />
-              </span>
-              <span className="w-9 h-9 rounded-full bg-black flex items-center justify-center">
-                <FontAwesomeIcon icon={faLinkedinIn} className="text-white text-[14px]" />
-              </span>
-              <span className="w-9 h-9 rounded-full bg-black flex items-center justify-center">
-                <FontAwesomeIcon icon={faYoutube} className="text-white text-[14px]" />
-              </span>
+              <FontAwesomeIcon icon={faFacebookF} className="text-[35px] text-[#111827]" />
+              <FontAwesomeIcon icon={faInstagram} className="text-[35px] text-[#111827]" />
+              <FontAwesomeIcon icon={faLinkedinIn} className="text-[35px] text-[#111827]" />
+              <FontAwesomeIcon icon={faYoutube}  className="text-[35px] text-[#111827]"/>
             </div>
           </div>
         </div>

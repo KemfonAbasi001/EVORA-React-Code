@@ -26,6 +26,6 @@ body {
 
 #run{
   background: url(../app/two.png) no-repeat;
-  background-size: inherit;
+  background-size: cover;
   background-position: bottom;
 }
