@@ -9,7 +9,7 @@ import { faFacebookF, faInstagram, faLinkedinIn, faYoutube } from "@fortawesome/
 
 export default function Footer() {
   return (
-    <footer className="py-10 text-gray-500 items-center flex gap-5 flex-col bg-[#111827]">
+    <footer className="py-10 text-[#9ca3af] items-center flex gap-5 flex-col bg-[#111827]">
       <div className="flex flex-col w-[90%] lg:w-[95%] gap-8">
         <div className="flex flex-col w-[90%] lg:w-[95%] lg:flex-row justify-between gap-9">
           <div className="flex flex-col gap-5 justify-between w-full lg:w-[20%]">

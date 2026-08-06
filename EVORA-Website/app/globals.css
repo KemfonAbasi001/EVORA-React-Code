@@ -19,8 +19,8 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  /* background: var(--background); */
+  /* color: var(--foreground); */
   font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
 }
 
@@ -28,4 +28,14 @@ body {
   background: url(../app/two.png) no-repeat;
   background-size: cover;
   background-position: bottom;
+}
+
+#lau{
+  background: url(../app/bgj.png) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
