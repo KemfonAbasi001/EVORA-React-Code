@@ -127,7 +127,7 @@ function Why() {
             </div>
 
             <div className="flex flex-row lg:gap-4 gap-2 items-center py-3 px-2">
-              <img className="w-9" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABI0lEQVR4nM2VMU5DMQyGnxgYKsbaLVfgCAiEuj37denABCPcAaYeoFyAAZX6f1PHLpyEqQMCigQScIWiCFWCJ57SNI2KpQyJ/edzotjJMo+R6QdD538Ok88s1hg6X8W3OUCrlC5DZrXXgrohsya08Gds8kKm+6GJ0Sg/cBA/IOJeeRntZgH9/hZDT5MBuJTz6FdVF9S+yYmgb8kAbHLLkEESQBPFIUEeaXy0s3bA3vh4m0zvGUXPzQny/qPAptEAMrlkyF01jqATgl5EAxg6XWTssv9eK3ruVO500YCqb/e62yDoQ6vUzi/nugBkesWQYag2ACCvriaSARhytop2OYDlJ64fJQP47J8ATJ/d7xS6+aKd+ANLETJ9Cv2TnYZM8+qGX8PA8J8JTYhMAAAAAElFTkSuQmCC" alt="external-battery-charge-mobile-telephone-those-icons-lineal-those-icons"></img>
+              <img className="lg:w-9 w-13" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABI0lEQVR4nM2VMU5DMQyGnxgYKsbaLVfgCAiEuj37denABCPcAaYeoFyAAZX6f1PHLpyEqQMCigQScIWiCFWCJ57SNI2KpQyJ/edzotjJMo+R6QdD538Ok88s1hg6X8W3OUCrlC5DZrXXgrohsya08Gds8kKm+6GJ0Sg/cBA/IOJeeRntZgH9/hZDT5MBuJTz6FdVF9S+yYmgb8kAbHLLkEESQBPFIUEeaXy0s3bA3vh4m0zvGUXPzQny/qPAptEAMrlkyF01jqATgl5EAxg6XWTssv9eK3ruVO500YCqb/e62yDoQ6vUzi/nugBkesWQYag2ACCvriaSARhytop2OYDlJ64fJQP47J8ATJ/d7xS6+aKd+ANLETJ9Cv2TnYZM8+qGX8PA8J8JTYhMAAAAAElFTkSuQmCC" alt="external-battery-charge-mobile-telephone-those-icons-lineal-those-icons"></img>
               <span className="flex flex-col">
                 <h1 className="text-[13px] font-medium text-[#111827]">Battery Safety </h1>
                 <p className="text-[13px] font-normal text-[#374151]">Advanced protection for complete peace.</p>

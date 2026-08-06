@@ -14,7 +14,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white flex justify-center w-full relative">
+    <header className="bg-[#f9fafb] flex justify-center w-full relative">
       <nav className="flex items-center w-[90%] lg:w-[95%] justify-between py-3">
         <Link href="/" className="text-xl font-bold">
           <Image src={logo} alt="EVORA logo" className="w-[140px] lg:text-[16px]" />
