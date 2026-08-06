@@ -159,7 +159,11 @@ function VehicleCard({ name, type, image, price, fig, amount, selfHeight }) {
           <p className="lg:text-[12px] text-[15.7px] text-medium text-[#374151]">{type}</p>
         </span>
 
-        <p className="text-[#111827] text-[18.7px] lg:text-[13px] font-medium">From <span className="font-bold">{price}</span></p>
+
+        <span className="flex justify-between mt-2">
+        <p className="text-[#111827] text-[18.7px] lg:text-[15px] font-medium">From <span className="font-bold">{price}</span></p>
+        <a className="text-[#16a34a] text-[15.8px] lg:text-[13px] font-medium flex justify-center items-center  gap-1">View Details <MoveRight className="w-3 h-4" /></a>
+        </span>
       </div>
     </div>
   );
@@ -178,13 +182,8 @@ function OurVehicles() {
         );
 
   return(
-    <section className="w-full flex justify-center items-center py-8 lg:py-15 bg-[#f9fafb]">
+    <section className="w-full flex justify-center items-center py-8 lg:py-10 bg-[#f9fafb]">
       <div className="w-[95%] flex flex-col gap-9">
-        <span>
-          <h1 className="font-medium text-[27px] lg:text-[32px] text-[#111827]">Our Vehicles</h1>
-          <p className="lg:text-[14px] text-[15px] text-[#374151]">Electric vehicles for every lifestyle and business.</p>
-        </span>
-
         <div className="flex flex-col gap-10">
           <div className="flex lg:grid lg:grid-cols-4 gap-3 w-full lg:w-fit overflow-x-auto pb-2 lg:pb-0 -mx-1 px-1 lg:mx-0 lg:px-0 scrollbar-hide">
             {categories.map((category) => (
@@ -221,9 +220,24 @@ function OurVehicles() {
   );
 }
 
+
+function CompLanding() {
+  return(
+    <section className="w-full flex justify-center items-center py-30 bg-[#f9fafb]" id="two">
+      <div className="w-[95%]">
+         <span className="w-full bg-amber-700">
+            <h1 className="font-medium text-[27px] lg:text-[45px] text-[#111827]">Our Vehicles</h1>
+            <p className="lg:text-[17px] text-[15px] text-[#374151] w-[40%]">Electric vehicles for every lifestyle and business.</p>
+          </span>
+      </div>
+    </section>
+  );
+}
+
+
 function CompareVehicles() {
   return(
-    <section className="w-full flex justify-center items-center py-20 bg-[#f9fafb]">
+    <section className="w-full flex justify-center items-center py-10 bg-[#f9fafb]">
       <div className="w-[95%] flex flex-col gap-10 lg:flex-row justify-between py-8 rounded-2xl px-6 lg:px-12 lg:items-center" id="lau">
         <div className="flex gap-3 flex-col w-full">
           <h1 className="text-[18px] font-semibold">Compare Models</h1>
@@ -250,6 +264,7 @@ function TeamSection() {
 export default function About() {
   return (
     <>
+      <CompLanding/>
       <OurVehicles />
       <CompareVehicles />
     </>

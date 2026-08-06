@@ -31,11 +31,26 @@ body {
 }
 
 #lau{
-  background: url(../app/bgj.png) no-repeat;
+  background: url(../app/geleven.png) no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+#two{
+  background: url(../app/bgone.png) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+/* 
+@media screen and (width: 700px) {
+  #two{
+    background: url(../app/bgone.png) no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+} */

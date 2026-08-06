@@ -53,7 +53,7 @@ export default function Footer() {
             <Link href="/about" className="text-[17px] lg:text-[13px]">Privacy Policy</Link>
           </div>
         </div>
-        <div className="flex flex-col gap-5 justify-between lg:flex-row border-x-0 border-b-0 border-t border-solid py-6 lg:py-3 w-full">
+        <div className="flex flex-col gap-5 justify-between lg:flex-row border-x-0 border-b-0 border-t border-solid border-[#9ca3af] py-6 lg:py-3 w-full">
           <p className="text-[17px] lg:text-[13px]"> © {new Date().getFullYear()} EVORA Mobility. All right reserved.</p>
           <span className="flex gap-4 text-[17px] lg:text-[13px]">
             <p>Privacy Policy</p>
