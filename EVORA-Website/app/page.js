@@ -177,7 +177,7 @@ function LandingPage() {
     >
       <div className="w-[93%] flex flex-col lg:flex-row lg:justify-between items-center gap-12 lg:gap-0">
         <div className="gap-2.5 flex flex-col text-center lg:text-left items-center lg:items-start">
-          <p className="text-black flex gap-1.5 justify-center items-center bg-[#f3f4f6] text-[15px] py-1.75 rounded-2xl px-3"><Zap className="text-[#16a34a]" /> 100% Electric</p>
+          <p className="text-black flex gap-1.5 justify-center items-center bg-[#f3f4f6] text-[14px] py-1 font-medium rounded-2xl px-3.25"><Zap className="text-[#16a34a] w-4.5" /> 100% Electric</p>
           <h1 className="text-[38px] leading-[48px] lg:text-[53px] lg:leading-[60px] font-semibold text-[#111827]">
             Drive the Future.
             <br />
