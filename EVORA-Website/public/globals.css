@@ -25,13 +25,13 @@ body {
 }
 
 #run{
-  background: url(../public/two.png) no-repeat;
+  background: url(../app/two.png) no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 
 #lau{
-  background: url(../public/geleven.png) no-repeat;
+  background: url(../app/geleven.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 #two{
-  background: url(../public/bgone.png) no-repeat;
+  background: url(../app/bgone.png) no-repeat;
   background-size: cover;
   background-position: bottom;
 }

@@ -4,17 +4,17 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import gtwo from '../../app/gtwo.png'
-import gthree from '../../app/gthree.png'
-import gfour from '../../app/gfour.png'
-import gfive from '../../app/gfive.png'
-import gsix from '../../app/gsix.png'
-import gseven from '../../app/gseven.png'
-import geight from '../../app/geight.png'
-import gnine from '../../app/gnine.png'
-import gten from '../../app/gten.png'
-import gtwelve from '../../app/gtwelve.png'
-import gthirteen from '../../app/gthirteen.png'
+import gtwo from '../../public/gtwo.png'
+import gthree from '../../public/gthree.png'
+import gfour from '../../public/gfour.png'
+import gfive from '../../public/gfive.png'
+import gsix from '../../public/gsix.png'
+import gseven from '../../public/gseven.png'
+import geight from '../../public/geight.png'
+import gnine from '../../public/gnine.png'
+import gten from '../../public/gten.png'
+import gtwelve from '../../public/gtwelve.png'
+import gthirteen from '../../public/gthirteen.png'
 
 import CompareVehicles from "@/components/layout/CTA -Section";
 
@@ -58,8 +58,9 @@ function BlogCard({ image, tag, title, readTime, date }) {
           <p className="flex gap-1 justify-center items-center text-[#374151]">
             <Clock2 className="w-3.5 h-3.5" /> {readTime} · {date}
           </p>
-          <a href="" className="flex gap-1 justify-center items-center text-[#10b981] font-medium">
-            Read More <MoveRight className="lg:w-3 lg:h-4 w-5 h-6" />
+          <a href="" className="flex gap-.5 justify-center items-center text-[#16a34a] font-medium">
+            Read More
+            <img className="w-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+0lEQVR4nO3YP04CURDH8VfpBZjZC1BRWlpbvBn+dDQSCpELcYSd2cp7WBEKGg5ARULtHwqVrInRBCwMCTLk90mm3nyTzex7mxIAAAAAwKkh02s2mX1O2b5JUZHLgl0/6iGTTWG5myIi0+VXSOgYruSWXd52YirppGjI5G5fDHu7l6JBTLSYIuICQMxfUKlDMln/fMAxh1xfyDSnQ7Qe+hdk8vxfEfwd83rQd6Y5yZfk8hQ+pMaWB2SyCv1qHVPD8yj80eXXCAu0fgvTe0ScAnYZhz9n8TlEUKlDNn0PvZ3O6qpLrvPwEbWGd67Y5ZFdp6F/BwEAAABACmcLFyT5NNBocPwAAAAASUVORK5CYII=" alt="right--v1" />
           </a>
         </span>
       </div>
@@ -87,7 +88,7 @@ function OurVehicles() {
                 onClick={() => setActiveCategory(category)}
                 className={`lg:text-[13px] text-[14px] py-1 px-2 rounded-lg border whitespace-nowrap shrink-0 transition-colors ${
                   activeCategory === category
-                    ? "bg-[#10b981] border-[#10b981] text-white"
+                    ? "bg-[#10b981] border-[#16a34a] text-white"
                     : "border-[#9ca3af] text-[#111827]"
                 }`}
               >
@@ -99,7 +100,10 @@ function OurVehicles() {
           <div className="flex flex-col gap-6 w-full">
             <span className="w-full flex justify-between items-center">
               <h1 className="font-semibold lg:text-[20px] text-[23px]">Latest Articles</h1>
-              <a href="" className="text-[#10b981] text-[16px] lg:text-[13px] flex gap-1 justify-center items-center font-medium">View All Posts <MoveRight className="w-3 h-4" /></a>
+              <a href="" className="text-[#16a34a] text-[16px] lg:text-[13px] flex gap-1 justify-center items-center font-medium">
+                View All Posts
+                <img className="w-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+0lEQVR4nO3YP04CURDH8VfpBZjZC1BRWlpbvBn+dDQSCpELcYSd2cp7WBEKGg5ARULtHwqVrInRBCwMCTLk90mm3nyTzex7mxIAAAAAwKkh02s2mX1O2b5JUZHLgl0/6iGTTWG5myIi0+VXSOgYruSWXd52YirppGjI5G5fDHu7l6JBTLSYIuICQMxfUKlDMln/fMAxh1xfyDSnQ7Qe+hdk8vxfEfwd83rQd6Y5yZfk8hQ+pMaWB2SyCv1qHVPD8yj80eXXCAu0fgvTe0ScAnYZhz9n8TlEUKlDNn0PvZ3O6qpLrvPwEbWGd67Y5ZFdp6F/BwEAAABACmcLFyT5NNBocPwAAAAASUVORK5CYII=" alt="right--v1" />
+              </a>
             </span>
 
             <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 items-stretch">
@@ -162,7 +166,10 @@ function LatestUpdate() {
           <div className="flex flex-col gap-6 w-full">
             <span className="w-full flex justify-between items-center">
               <h1 className="font-semibold lg:text-[20] text-[23px] ">Trending Now</h1>
-              <a href="" className="text-[#10b981] text-[16px] lg:text-[13px] flex gap-1 justify-center items-center font-medium">View All Posts <MoveRight className="lg:w-3 lg:h-4 w-5 h-6" /></a>
+              <a href="" className="text-[#16a34a] text-[16px] lg:text-[13px] flex gap-.5 justify-center items-center font-medium">
+                View All Posts
+                <img className="w-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+0lEQVR4nO3YP04CURDH8VfpBZjZC1BRWlpbvBn+dDQSCpELcYSd2cp7WBEKGg5ARULtHwqVrInRBCwMCTLk90mm3nyTzex7mxIAAAAAwKkh02s2mX1O2b5JUZHLgl0/6iGTTWG5myIi0+VXSOgYruSWXd52YirppGjI5G5fDHu7l6JBTLSYIuICQMxfUKlDMln/fMAxh1xfyDSnQ7Qe+hdk8vxfEfwd83rQd6Y5yZfk8hQ+pMaWB2SyCv1qHVPD8yj80eXXCAu0fgvTe0ScAnYZhz9n8TlEUKlDNn0PvZ3O6qpLrvPwEbWGd67Y5ZFdp6F/BwEAAABACmcLFyT5NNBocPwAAAAASUVORK5CYII=" alt="right--v1" />
+              </a>
             </span>
 
             <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-10 items-stretch">

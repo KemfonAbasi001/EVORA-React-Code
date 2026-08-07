@@ -1,112 +1,90 @@
+
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 
-import one from '../../app/imgoneg.png'
-import two from '../../app/imgtwo.png'
-// import three from '../../app/imgthree.png'
-import four from '../../app/imgfourr.png'
+import workplaceImg from "../../public/solnone.png";
+import publicImg from "../../public/solntwo.png";
+import homeImg from "../../public/solnthree.png";
+import fleetImg from "../../public/solnfour.png";
 
-import neww from '../../app/imgten.png'
-
-import { ChevronRight, CircleGauge, MoveRight, Zap } from "lucide-react";
-
-
-
-
-const vehicles = [
-  { name: "Evora City", type: "Compact EV", image: one, price: "$12,650", fig: "120", amount: "40" },
-  { name: "Evora Keke", type: "Electric Three Wheeler", image: two, price: "$12,650", fig: "80", amount: "50" },
-  { name: "Evora Cab", type: "24/7 EV", image: four, price: "$12,650", fig: "420", amount: "80" },
-  // { name: "Evora Pro", type: "Crossover EV", image: three, price: "$12,650", fig: "36", amount: "120" },
+const solutions = [
+  {
+    image: workplaceImg,
+    title: "EV Fleet Management",
+    desc: "Complete fleet visibility, real-time tracking and smart analytics.",
+    href: "/solutions/workplace",
+    tag: "New",
+  },
+  {
+    image: publicImg,
+    title: "Last-Mile Delivery",
+    desc: "Efficient electric solutions for faster and cleaner deliveries.",
+    href: "/solutions/public",
+    tag: "New",
+  },
+  {
+    image: homeImg,
+    title: "Charging Infrastructure",
+    desc: "Scalable charging networks for businesses and public spaces.",
+    href: "/solutions/home",
+    tag: "New",
+  },
+  {
+    image: fleetImg,
+    title: "Sustainable Cities",
+    desc: "Supporting cities in building a cleaner, healthier future.",
+    href: "/solutions/fleet",
+    tag: "New",
+  },
 ];
 
-function VehicleCard({ name, type, image, price, fig, amount, selfHeight }) {
+function Name() {
   return (
-    <div
-      className={`rounded-lg border border-solid border-[#9ca3af] hover:border-[#16a34a] py-7 px-6 ${
-        selfHeight ? "self-start h-fit" : ""
-      }`}
-    >
-      <div className=" flex flex-col gap-3">
-
-        <Image src={image} alt={name} className="w-full" />
-        
-        <span className="">
-          <h1 className="font-medium text-[26px] lg:text-[20px] text-[#111827]">{name}</h1>
-          <p className="lg:text-[12px] text-[15.7px] text-medium text-[#374151]">{type}</p>
-        </span>
-        
-        <p className="text-[#111827] text-[18.7px] lg:text-[13px] font-medium">From <span className="font-bold">{price}</span></p>
-      </div>
-    </div>
-  );
-}
-
-
-function OurVehicles() {
-  return(
-    <section className="w-full flex justify-center items-center py-15 bg-[#f9fafb]">
-      <div className="w-[95%] flex flex-col gap-9">
-        <span>
-          <h1 className="font-medium text-[27px] lg:text-[32px] text-[#111827]">Our Vehicles</h1>
-          <p className="lg:text-[14px] text-[15px] text-[#374151]">Electric vehicles for every lifestyle and business.</p>
-        </span>
-
-        <div className="flex flex-col gap-10">
-          <div className="grid grid-cols-4 gap-3 w-full">
-            <button className="lg:text-[14px] text-[15px] py-1.25 px-4 rounded-2xl border border-[#16a34a]">All Vehicles</button>
-            <button className="lg:text-[14px] text-[15px] py-1.25 px-4 rounded-2xl border border-[#9ca3af]">Three Wheeler</button>
-            <button className="lg:text-[14px] text-[15px] py-1.25 px-4 rounded-2xl border border-[#9ca3af]">Compact</button>
-            <button className="lg:text-[14px] text-[15px] py-1.25 px-4 rounded-2xl border border-[#9ca3af]">Crossover</button>
-          </div>
-          <div className="grid girf-cols-1 lg:grid-cols-3 gap-5 items-stretch">
-            {vehicles.map((vehicle, index) => (
-              <VehicleCard
-                key={index}
-                {...vehicle}
-                selfHeight={index === 0 || index === 2}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function CompareVehicles() {
-  return(
     <section className="w-full flex justify-center items-center py-20 bg-[#f9fafb]">
-      <div className="w-[95%] flex justify-between bg-[#e5e7eb] py-8 rounded-2xl px-12 items-center">
-        <div className="flex gap-3 flex-col">
-          <h1 className="text-[18px] font-semibold">Compare Models</h1>
-          <p className="text-[15px]">Find the perfect EV for your needs</p>
-          <button className="bg-[#10b981] py-2.75 w-fit px-5 rounded-[6px] text-[15px] lg:text-[14px] text-[#f9fafb] font-medium">
-            Compare model
-          </button>
+      <div className="w-[95%] flex flex-col gap-2">
+        <div className="w-full flex flex-col sm:flex-row sm:justify-between sm:items-end gap-3">
+          <h1 className="font-medium text-[27px] text-[#111827]">Solutions Built for Impact</h1>
+          <Link href="/solutions" className="text-[14px] font-medium text-[#16a34a] flex gap-1">
+            Explore All Solutions
+            <img className="w-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+0lEQVR4nO3YP04CURDH8VfpBZjZC1BRWlpbvBn+dDQSCpELcYSd2cp7WBEKGg5ARULtHwqVrInRBCwMCTLk90mm3nyTzex7mxIAAAAAwKkh02s2mX1O2b5JUZHLgl0/6iGTTWG5myIi0+VXSOgYruSWXd52YirppGjI5G5fDHu7l6JBTLSYIuICQMxfUKlDMln/fMAxh1xfyDSnQ7Qe+hdk8vxfEfwd83rQd6Y5yZfk8hQ+pMaWB2SyCv1qHVPD8yj80eXXCAu0fgvTe0ScAnYZhz9n8TlEUKlDNn0PvZ3O6qpLrvPwEbWGd67Y5ZFdp6F/BwEAAABACmcLFyT5NNBocPwAAAAASUVORK5CYII=" alt="right--v1" />
+          </Link>
         </div>
-        <Image
-          src={neww}
-          alt="Electric vehicle"
-          className="w-[90%] sm:w-[65%] lg:w-[30%]"
-        />
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 py-4">
+          {solutions.map((solution) => (
+            <div
+              key={solution.title}
+              className="rounded-lg overflow-hidden border border-[#d1d5db] bg-white"
+            >
+              <div className="">
+                <Image
+                  src={solution.image}
+                  alt={solution.title}
+                  className="w-full h-48 object-cover"
+                />
+              </div>
+              <span className="flex flex-col gap-1 py-3 px-4">
+                <h1 className="font-medium text-[14px] text-[#111827]">{solution.title}</h1>
+                <p className="text-[13px] text-[#374151]">{solution.desc}</p>
+                <Link href={solution.href} className="text-[12px] font-medium text-[#16a34a] flex gap-1">
+                  Learn More 
+                  <img className="w-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+0lEQVR4nO3YP04CURDH8VfpBZjZC1BRWlpbvBn+dDQSCpELcYSd2cp7WBEKGg5ARULtHwqVrInRBCwMCTLk90mm3nyTzex7mxIAAAAAwKkh02s2mX1O2b5JUZHLgl0/6iGTTWG5myIi0+VXSOgYruSWXd52YirppGjI5G5fDHu7l6JBTLSYIuICQMxfUKlDMln/fMAxh1xfyDSnQ7Qe+hdk8vxfEfwd83rQd6Y5yZfk8hQ+pMaWB2SyCv1qHVPD8yj80eXXCAu0fgvTe0ScAnYZhz9n8TlEUKlDNn0PvZ3O6qpLrvPwEbWGd67Y5ZFdp6F/BwEAAABACmcLFyT5NNBocPwAAAAASUVORK5CYII=" alt="right--v1" />
+                </Link>
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
 }
 
-
-function TeamSection() {
-  return <section><h2>Our Team</h2></section>;
-}
-
-export default function About() {
+export default function Charge() {
   return (
     <>
-      <OurVehicles />
-      {/* <CompareVehicles /> */}
+      <Name />
     </>
   );
 }
-
-
