@@ -94,7 +94,23 @@ function OurVehicles() {
   );
 }
 
-
+function LandingPage() {
+  return (
+    <section className="flex justify-center py-30" id="Contact">
+      <div className="w-[93%] flex flex-col lg:flex-row lg:justify-between items-center gap-12 lg:gap-0">
+        <div className="gap-3 flex flex-col text-center lg:text-left items-center lg:items-start w-[40%] ">
+          <p className="uppercase text-[14px] text-[#16a34a] font-medium">Contact us</p>
+          <h1 className="text-[38px] leading-12 lg:text-[53px] lg:leading-15 font-semibold text-[#f3f4f6]">
+            Get in Touch
+          </h1>
+          <p className="text-[18px] text-[#f9fafb]">
+            We're here to help and answer any questions you may have.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 
 function Accordion() {
@@ -198,6 +214,7 @@ function Accordion() {
 export default function Contact() {
   return (
     <>
+    <LandingPage />
       <OurVehicles />
       <Accordion />
     </>

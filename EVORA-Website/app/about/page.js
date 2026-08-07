@@ -56,7 +56,7 @@ function ValueCards() {
 
 function AboutIntro() {
   return (
-    <section className="w-full flex justify-center items-center px-4 pt-20 bg-[#f3f4f6]">
+    <section className="w-full flex justify-center items-center px-4 pt-20">
       <div className="w-full sm:w-[95%] max-w-5xl flex flex-col items-center gap-9">
         <div className="flex gap-2 w-full sm:w-[80%] lg:w-[40%] flex-col justify-center items-center text-center">
           <span className="flex flex-col gap-2">
@@ -78,7 +78,7 @@ function AboutIntro() {
 
 function TeamSection() {
   return (
-    <section className="w-full flex justify-center items-center px-4 pb-10 pt-20 bg-[#f3f4f6]">
+    <section className="w-full flex justify-center items-center px-4 pb-10 pt-20">
       <div className="w-full sm:w-[95%] max-w-5xl flex flex-col items-center gap-9">
         <span className="flex flex-col w-full sm:w-[70%] lg:w-[40%] gap-2 items-center text-center">
           <p className="text-[#16a34a] font-medium">Our Journey</p>
@@ -139,9 +139,29 @@ function PeopleSection() {
   );
 }
 
+function LandingPage() {
+  return (
+    <section className="flex justify-center py-30" id="about">
+      <div className="w-[93%] flex flex-col lg:flex-row lg:justify-between items-center gap-12 lg:gap-0">
+        <div className="gap-5 flex flex-col text-center lg:text-left items-center lg:items-start w-[40%]">
+          <h1 className="text-[38px] leading-12 lg:text-[53px] lg:leading-15 font-semibold text-[#111827]">
+            Driving Change <span className="text-[#22c55e]">Together</span>
+          </h1>
+          <p className="text-[18px] text-[#111827]">
+            Evora is on a mission to accelerate the world's transition to sustainable mobility.
+          </p>
+          <button className="bg-[#10b981] py-2.75 px-5 rounded-md text-[15px] lg:text-[14px] text-[#f9fafb] font-medium">Learn our Story</button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
 export default function About() {
   return (
     <>
+    <LandingPage/>
       <AboutIntro />
       <TeamSection />
       <PeopleSection />

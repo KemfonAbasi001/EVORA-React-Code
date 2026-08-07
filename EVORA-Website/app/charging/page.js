@@ -8,6 +8,8 @@ import publicImg from "../../public/housetwo.png";
 import homeImg from "../../public/housethree.png";
 import fleetImg from "../../public/housefour.png";
 
+import { CircleCheckBig } from 'lucide-react'
+
 const solutions = [
   {
     image: workplaceImg,
@@ -90,9 +92,47 @@ function Name() {
   );
 }
 
+function LandingPage() {
+  return (
+    <section className="flex justify-center py-30" id="charge">
+      <div className="w-[93%] flex flex-col lg:flex-row lg:justify-between items-center gap-12 lg:gap-0">
+        <div className="gap-3 flex flex-col text-center lg:text-left items-center lg:items-start w-[40%]">
+          <span className="text-[14px] flex text-[#f9fafb]">              
+            <img className="w-5" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADtklEQVR4nNWZXYhVVRTHlx8ZqSDjvXudO2pBJhWBhORXggyIH2etc0d7cPIpJJQIfCh8MMSHKwThBwY+DiLOWWvuCBd9CIyCoAkMjMh6USMYPx4UgxSR8qP8GNnn7jMz3rlnvJjO7POD83T/57DX3f+99tp7ATxPal1TjNJPqDz4pMco3zFxtA58JJCws5Ug0ifopU3gI6j0bfJvC+3M0gRCq+qB0OW3al3TwDdMT/gaKj0wQv9iX2eQpUOhE/Vgo8/AR4zSl242NEtT0HVvJMEq/zMnfq8AvjGv1vWSEb5et0y4PEtnlLqdrQ6CjwTCW5IBCv2WpSkdDo0Ruo1C960NwUdQ6JckCwlvydZwxWWrY+AjGJffdXa5EciaGc00Cw6GL6LS1foa4hXgI0ZI3QAPZGlQaavT/Aw+0l4tF+0OjcIPizG93lQ0CJOM8FmXcrvAR4zQTmerb7I0xV4iV5JchP6OqeAdlcpko3TBlRrlLJlR+s6l5U/BR1Cj9W4DvGSLxaaaXlpobYfCN9tqq2eB53XVjmwNx25/2Qc+YtK6SvluIGuwmabQt35OUncJ32uPy6+Az3UVCvVkaVD5C5dyq+Aj80bUVSUNlzTTtHeXpxula0kiqEZLweu6SvnXLI0R2uY0P4CvoNBpt8g/HEPze4unxJPjO/p0gBour29udM1aLEtnhPpbPLefGd8IGuqq/5NOA+FltpS3Wa+o0UqYsLpK6QFWo/lP8w17RrezMKGHK5PWVUInnvobSp+ndZepdcx8tiNsdRBC51vyvVB/8/ejt1H5v6RkiaPVMFGg8skWM9HAqJf7O6YOZzs+BD6DSvtdIHtH/8a7nC2vzKpGbeAzxlmvENPixiugepLgQYx5A/hMUI2Wuv3lgj0RDv1QqUxOLTnWfZf3tkKl7S6Iv+x1EPiOaWKrQDpfReG/6zMVbgTfKWm4ZJSt7IWDO+Iaoa8gD6DQvkZbYUwfu1R73RzhEuQB02Cr2T3RXHtZlwQS8weQB0pNbGWt5Gboa8gL2GAro9Hm+sbHN9uOrn0Z8gIqD6S2smthqLUg0UeQF0oNtkKl4y5Lff/YppgnWxWV33dB3fK29/EkW9kWsxH60x2WPoE8UYhpcWorI9Tn9oxTWVen3oJKe1wg59Lmf6FafhPyBjpbDZ8KPW01t2Krocc2QLvfeQHyBirvHQ6C7xXjcBHkERxhK6O0G/JIYYSt7EK33VrII5jaSuh+1k18LkDlP7zuQEGLJO024R/HusAeLx4Bt8p74psGLpkAAAAASUVORK5CYII=" alt="lightning-bolt--v1"></img>
+            Powering the Future
+          </span>
+          <h1 className="text-[38px] leading-12 lg:text-[53px] lg:leading-15 font-semibold text-[#f3f4f6]">
+            Charging <span className="text-[#22c55e]">Solutions</span>
+          </h1>
+          <p className="text-[18px] text-[#f9fafb]">
+            Power up anywhere with Evora charging network.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <span className="text-[14px] text-[#f9fafb] items-center flex gap-1">
+              <CircleCheckBig size={15}/>
+              Ultra-fast
+            </span>
+
+            <span className="text-[14px] text-[#f9fafb] items-center flex gap-1">
+              <CircleCheckBig size={15}/>
+              Wide network coverage
+            </span>
+
+            <span className="text-[14px] text-[#f9fafb] items-center flex gap-1">
+              <CircleCheckBig size={15}/>
+              Smart charging management
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Charge() {
   return (
     <>
+      <LandingPage />
       <Name />
     </>
   );

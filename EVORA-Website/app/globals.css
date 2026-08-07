@@ -36,8 +36,48 @@ body {
   background-position: center;
 }
 
+#love {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0)
+    ),
+    url(../public/solnbg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#Contact {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0)
+    ),
+    url(../public/contactbg.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+#about {
+  background: url(../public/aboutbg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+#charge{
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0)
+    ),
+    url(../public/chargebg.png);
+  background-size: cover;
+  background-position: center;
 }
 
 #two{
