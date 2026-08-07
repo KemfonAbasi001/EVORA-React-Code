@@ -47,19 +47,19 @@ function OurVehicles() {
                 <div className="flex gap-3 items-start flex-col">
                     <h2 className="text-[16px] font-medium">Follow Us</h2>
                     <div className="flex gap-3">
-                        <div className="px-3 py-3.5 bg-[rgba(229,231,235,06)] flex justify-center items-center rounded-full">
+                        <div className="px-3 py-3.5 bg-[rgba(229,231,235,0.6)] flex justify-center items-center rounded-full">
                             <FontAwesomeIcon icon={faFacebookF} className="text-[20px] text-[#111827]" />
                         </div>
 
-                        <div className="px-3 py-3.5 bg-[rgba(229,231,235,06)] flex justify-center items-center rounded-full">
+                        <div className="px-3 py-3.5 bg-[rgba(229,231,235,0.6)] flex justify-center items-center rounded-full">
                             <FontAwesomeIcon icon={faInstagram} className="text-[20px] rounded-full text-[#111827]" />
                         </div>
 
-                        <div className="px-3 py-3.5 bg-[rgba(229,231,235,06)] flex justify-center items-center rounded-full">
+                        <div className="px-3 py-3.5 bg-[rgba(229,231,235,0.6)] flex justify-center items-center rounded-full">
                             <FontAwesomeIcon icon={faLinkedinIn} className="text-[20px] text-[#111827]" />
                         </div>
 
-                        <div className="px-3 py-3.5 bg-[rgba(229,231,235,06)] flex justify-center items-center rounded-full">
+                        <div className="px-3 py-3.5 bg-[rgba(229,231,235,0.6)] flex justify-center items-center rounded-full">
                             <FontAwesomeIcon icon={faYoutube} className="text-[20px] text-[#111827]" />
                         </div>
 

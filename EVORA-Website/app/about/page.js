@@ -91,7 +91,7 @@ function TeamSection() {
           {milestones.map((item) => (
             <span
               key={item.year}
-              className={`relative py-5 pl-5 pr-6 lg:pr-10 border-l-2 border-r-0 border-y-0 border-solid border-[#e5e7eb] after:content-[''] after:absolute after:left-[-4px] after:bottom-0 after:w-[7px] after:h-[7px] after:rounded-full ${
+              className={`relative py-5 pl-5 pr-6 lg:pr-10 border-l-2 border-r-0 border-y-0 border-solid border-[#e5e7eb] after:content-[''] after:absolute after:-left-1 after:bottom-0 after:w-1.75 after:h-1.75 after:rounded-full ${
                 item.filled ? "after:bg-[#16a34a]" : "after:bg-[#16a34a]"
               }`}
             >

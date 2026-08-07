@@ -36,6 +36,13 @@ body {
   background-position: center;
 }
 
+
+#loud{
+  background: url(../public/beforefooter.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
 #love {
   background: linear-gradient(
       to right,

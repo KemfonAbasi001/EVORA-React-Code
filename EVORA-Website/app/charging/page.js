@@ -96,9 +96,10 @@ function LandingPage() {
   return (
     <section className="flex justify-center py-30" id="charge">
       <div className="w-[93%] flex flex-col lg:flex-row lg:justify-between items-center gap-12 lg:gap-0">
-        <div className="gap-3 flex flex-col text-center lg:text-left items-center lg:items-start w-[40%]">
-          <span className="text-[14px] flex text-[#f9fafb]">              
-            <img className="w-5" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADtklEQVR4nNWZXYhVVRTHlx8ZqSDjvXudO2pBJhWBhORXggyIH2etc0d7cPIpJJQIfCh8MMSHKwThBwY+DiLOWWvuCBd9CIyCoAkMjMh6USMYPx4UgxSR8qP8GNnn7jMz3rlnvJjO7POD83T/57DX3f+99tp7ATxPal1TjNJPqDz4pMco3zFxtA58JJCws5Ug0ifopU3gI6j0bfJvC+3M0gRCq+qB0OW3al3TwDdMT/gaKj0wQv9iX2eQpUOhE/Vgo8/AR4zSl242NEtT0HVvJMEq/zMnfq8AvjGv1vWSEb5et0y4PEtnlLqdrQ6CjwTCW5IBCv2WpSkdDo0Ruo1C960NwUdQ6JckCwlvydZwxWWrY+AjGJffdXa5EciaGc00Cw6GL6LS1foa4hXgI0ZI3QAPZGlQaavT/Aw+0l4tF+0OjcIPizG93lQ0CJOM8FmXcrvAR4zQTmerb7I0xV4iV5JchP6OqeAdlcpko3TBlRrlLJlR+s6l5U/BR1Cj9W4DvGSLxaaaXlpobYfCN9tqq2eB53XVjmwNx25/2Qc+YtK6SvluIGuwmabQt35OUncJ32uPy6+Az3UVCvVkaVD5C5dyq+Aj80bUVSUNlzTTtHeXpxula0kiqEZLweu6SvnXLI0R2uY0P4CvoNBpt8g/HEPze4unxJPjO/p0gBour29udM1aLEtnhPpbPLefGd8IGuqq/5NOA+FltpS3Wa+o0UqYsLpK6QFWo/lP8w17RrezMKGHK5PWVUInnvobSp+ndZepdcx8tiNsdRBC51vyvVB/8/ejt1H5v6RkiaPVMFGg8skWM9HAqJf7O6YOZzs+BD6DSvtdIHtH/8a7nC2vzKpGbeAzxlmvENPixiugepLgQYx5A/hMUI2Wuv3lgj0RDv1QqUxOLTnWfZf3tkKl7S6Iv+x1EPiOaWKrQDpfReG/6zMVbgTfKWm4ZJSt7IWDO+Iaoa8gD6DQvkZbYUwfu1R73RzhEuQB02Cr2T3RXHtZlwQS8weQB0pNbGWt5Gboa8gL2GAro9Hm+sbHN9uOrn0Z8gIqD6S2smthqLUg0UeQF0oNtkKl4y5Lff/YppgnWxWV33dB3fK29/EkW9kWsxH60x2WPoE8UYhpcWorI9Tn9oxTWVen3oJKe1wg59Lmf6FafhPyBjpbDZ8KPW01t2Krocc2QLvfeQHyBirvHQ6C7xXjcBHkERxhK6O0G/JIYYSt7EK33VrII5jaSuh+1k18LkDlP7zuQEGLJO024R/HusAeLx4Bt8p74psGLpkAAAAASUVORK5CYII=" alt="lightning-bolt--v1"></img>
+        <div className="gap-4 flex flex-col text-center lg:text-left items-center lg:items-start w-full">
+          <span className="text-[13px] rounded-[20px] py-1 px-3 items-center flex gap-1 border-[#16a34a] border font-medium text-[black] bg-[rgba(229,231,235,0.6)]">              
+            <img className="w-4 h-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABqklEQVR4nO3ZTSgEYRjA8T9LtBS1lJzIRcJBbhwlLnKR5LgcRS6cKG64CjcOUhx9HZSVopR8nCW5oESJ8m311By2aXZmDtPO+9T+6qk9zr93m3nnHcjKKgQOgF2UmwOSwAOKtQA/VsgmShUBV1aEzARKLaREyHSgUBvwlxIhv2MoUwLc2lZD/mLqrNgiZFZRpsshQmYERcqsZ4VTiNyG1VhPE/ENRFGiP02EzBlKVAJPLiGLKLHtEiETR4FBjwiZBgxXBbx4RLwBeRgsF9j3sRryHmK0YR8RMjMYrAZ49RnSg6EiwLHPCD+TCCtkPMAImcswIuqA9wAjfoHWTEfILfQ04NWYJwTTAUfcAaWZjmgCvgIO6SYEFwFHbBCSRIARz0AFBuv1GRLXciya9Nh35WC4Q4+ID6AWw0Ws7bpbyBgKNPrYhuSjwIBLhJzEN6PEkkvILIqcp4m4AYpRImodwDmFtKNIa5qIZZQZdYh4BMpRZs0hpA+Frm0ROygUs31ek6d7NQp12lZjCKUmUyJOrD2XSltWxCdQj2L3VsgUyu0BR0BB2BeShQH+AVEQhQDcYk4cAAAAAElFTkSuQmCC" alt="quick-mode-on--v1"></img>
+            {/* <img className="w-4 h-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPElEQVR4nO2ZS2hTQRSGR20VFRFt5qRGXelGwQcWRFEpLtR7zo1a0Sr4wIUPxJUgCMVF3RQEFXxrodXeOWnFbLoSu2pFRVdu3fhC6mvnwler1cokMzaJqdqaxDuSD4aEO5d7z8/c/8ycGSHKlPm/kIG/DhiTsaCuSrgKtHkLJdN7YBqMJmi1cJFZybXTgemxFiGZPs1ojk8SzpGsHweMN7WIdMMu4SJS0ckhEbp5h4RrQAK3GwGfrZDqgOYJl5DKXyQZPxhfXDK/z4Rr5pYKn6RGQWEbMB21goQz9NRWSIXdqcAV3Z97xpsAiu6mRAW0UbiCVHTaZKfX09v8mVPb/Wmg6ItU2F/VsmGKcAFg2mnNHWF/lb4WYdqaHh3sFi4gE7TYmhsSuM9eB8arRsgREXZiQV2VZHz6k6EHxRhQ+NKIWyAcMHdPWgTe0+a2XRGOL0lnLnqlRYkwA0znbLBVHRtiOX0m7WKLCDMyoF3W3DLwVub227Qr2dsiwkqE40ukwo8m1e7N7bdpFxQO6AlShBHoWB8FRb1mNM7nuyeawG2m/44IJc01lTq4H0E211Tmuw0UtWaven/TFA5IhQ0l0wFMF425e/XIDHufokZg/DoSMVJRU0lESPZ32yov2u4v/esH9tRWANOtfKm7aAB7yyRTX6rmVrSnoKmb0+syUWzkVaoGxhfmWz5brHVZ8c2t8Lbxxd35yfrxBV2XKX9/YQL93UsVNY0o+6Tbo1nJ+on5nlfd6knJ+Nz4orkkItJCsEGnxhFlH6a+qFoz+ZdFF+O9QoxuUYAADxjz3vyTokuEFWC6YUbk4E99yttRWnOPEv0p6fkFFH2bdm3t7OF2VEpm7tEC7G8y6fnBcDsqUuFlEXaA6Yox8bGc7dKuks7cf0Vj41ip8I0OWC/v7WWp6JQT5rbIBK4wAb+wJW3mdmmozZ0JMB43/rjgnLkzkYwPUz4I/HXOmdsi27w5Zh32Th/g2LMQN8ydASTwsPFHEhhPOGXuTIYKI+rUk6FT5s46G9Q7JVm1t0PmzlMcDTpn7kxA4fWhpbtj5s7eFsK3zprbAkF8ufmc+vV/4Sqx1FECdUqFm/91LGXKiMLyHZOTQPm6+gTzAAAAAElFTkSuQmCC" alt="flash-on"></img> */}
             Powering the Future
           </span>
           <h1 className="text-[38px] leading-12 lg:text-[53px] lg:leading-15 font-semibold text-[#f3f4f6]">
@@ -109,18 +110,93 @@ function LandingPage() {
           </p>
           <div className="flex flex-wrap gap-3">
             <span className="text-[14px] text-[#f9fafb] items-center flex gap-1">
-              <CircleCheckBig size={15}/>
+              <CircleCheckBig size={15} color="#16a34a"/>
               Ultra-fast
             </span>
 
             <span className="text-[14px] text-[#f9fafb] items-center flex gap-1">
-              <CircleCheckBig size={15}/>
+              <CircleCheckBig size={15} color="#16a34a"/>
               Wide network coverage
             </span>
 
             <span className="text-[14px] text-[#f9fafb] items-center flex gap-1">
-              <CircleCheckBig size={15}/>
+              <CircleCheckBig size={15} color="#16a34a"/>
               Smart charging management
+            </span>
+          </div>
+          <button className="bg-[#22c55e] py-2.75 px-5 flex gap-1 rounded-md text-[15px] lg:text-[14px] text-[#f9fafb] font-medium">
+            Find Charging Station
+            <img className="w-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA30lEQVR4nO3YvUoDURCG4an0fiytLSwSLyBi4c+tWkkKGy8gVcA62XlnVk84hShECwkkmfA9MPXywnJ2zpqJiIiIiBybiLj0yHmfIfPKqiLyjcjWxwncc2oVEbH4CikdA+PMiY+tmMyJVQPc/xrjeWPVKKZgzNSqUcx/wHjnxPvPB+xznBiGzGvbRWvtzIn1oSL4jvGdvjOttXMnVuVDOhhvIZalX619Ah7Kry5/Rnih4xd4VMQxAJ7K71mcRsTYN4XP0qfTSV11PfK1fEQHXDj57ORL6d9BIiIiImLlbAB4ffsS2bXx+QAAAABJRU5ErkJggg==" alt="right--v1"></img>
+            {/* <img className="w-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+0lEQVR4nO3YP04CURDH8VfpBZjZC1BRWlpbvBn+dDQSCpELcYSd2cp7WBEKGg5ARULtHwqVrInRBCwMCTLk90mm3nyTzex7mxIAAAAAwKkh02s2mX1O2b5JUZHLgl0/6iGTTWG5myIi0+VXSOgYruSWXd52YirppGjI5G5fDHu7l6JBTLSYIuICQMxfUKlDMln/fMAxh1xfyDSnQ7Qe+hdk8vxfEfwd83rQd6Y5yZfk8hQ+pMaWB2SyCv1qHVPD8yj80eXXCAu0fgvTe0ScAnYZhz9n8TlEUKlDNn0PvZ3O6qpLrvPwEbWGd67Y5ZFdp6F/BwEAAABACmcLFyT5NNBocPwAAAAASUVORK5CYII=" alt="right--v1" />   */}
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SubLand() {
+  return (
+    <section className="pt-5 flex justify-center bg-[#f9fafb]">
+      <div className="w-[93%] lg:px-8 rounded-lg grid grid-cols-2 lg:grid-cols-4 lg:py-2 lg:gap-y-4 gap-1 lg:gap-x-4 justify-between shadow">
+
+        <div className="flex flex-row gap-4 items-center py-2 px-4 border-solid border-y-0 border-l-0 border-r border-[#d1d5db]">
+          <img className="w-11" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABqUlEQVR4nL2Vv0vDUBDHIzjppPZdo+jqH6A466DSuzq49S9wclCwTl38Nxyk9i7FRUHQpSh2cxAF/wsHoYvdHCKXtJgmafpqWx8cOV6+vU/vR95znP9apkouMF4awQcbA9VWybUGhMGpbQswQm0QrNpnwNhUU9+VwgbUittppu/i+qEAuXpxHYT8LMvJ3loUsFTbXzBMdX1G/VRAXopbQSAPTxIZ6J6Qr5oooPsbfUb9TEBC4PQGigJAqBL8KcbXwMJMK2PLwDA2gbEVmbBWoj+j9MDEGp46AKNMETA1gPGtGyssFTX6AoaZOkd9oVPNzDC9qHX8shVg7mp3BYSu42PXo29uTivEMH6GRmXdswIYpjtg+nIvCmaQPrMKaS/zHpbCxhaObfRDARbP92ZA8COsJz5pmXRv3ICbTnBfYQMBgs+J6RlEB8Gj4OPysBTXg+B7d3wN4yEwfRvBM2uANlYbDIz3afr4B2iYHvO8M2sN6J6M81JYTgf8ZpCr4arjO1OpwbNK1G/9+T6YiB48PNATMHoiWtzJrc6peZu4XNIA9ndxzGwAk1w/oCre2ZIcN3oAAAAASUVORK5CYII=" alt="external-charging-station-ecology-tanah-basah-basic-outline-tanah-basah"></img>
+          <span className="flex flex-col">
+            <h1 className="text-[22px] text-[#16a34a] font-semibold">1,200+</h1>
+            <p className="text-[14px] font-normal text-[#374151]">Charging Stations</p>
+          </span>
+        </div>
+
+        <div className="flex flex-row gap-4 items-center py-2 px-4 border-solid border-y-0 border-l-0 border-r border-[#d1d5db]">
+          <img className="w-11" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB2UlEQVR4nO2Wv0oDQRDGV7CwEEHJTmIhQko7S6s0oje7sVR8BZ9A0AewEKwt1JBdoihY6AMoGC1sUlpYCCLYBiwURIncHyWES3K55HJz534whAmzZH53386EMSMjI6NOAo13oEUjRFQZJUE4CCcYJUGIpgxIlGptyq/JIDWxC9IKEkQGJEp1s01i9gx0BUnInoEuP5oY60FaQaDHPGhN5EotSGqslRoQ6DkPtWeqBEGI7Bjo01q9Ngb/HgTC/1fytcKg88AaBAQpEBZShKwlUgByXRiN2hpDsRZXcjXuRqFNPlsqjAUGASVuqVqLK2sj0IFM2Zr3mzpkQDQ+2dYPcABLwxifYXPQopFVcr0jRO7Q4lyLD9D4TRkEtKh1BAGNW+7rE5dUrQVKvDo9luVy+5GrxItTXJaLVEG4kpvuJ175Fma0WPMu0wNrsBGqIFPamgCNdfeBFxf8CqvN440qCHPWA+64OZ63GblY52eF8eaD1ILZvR2vZLnCd3so5bQ110x75Nlqr/UNkQqFN7/9cYX7Xs8HzhfTlWLmb+RWZJ4lRFCReVD4BVp8Tp4szdhPftubAhcsYQKFp96V2GVc43Psluk78M322n38jfR9dx7jdoeRkREbjn4A4U4JCHhQc44AAAAASUVORK5CYII=" alt="city-block"/>
+          <span className="flex flex-col">
+            <h1 className="text-[22px] text-[#16a34a] font-semibold">300+</h1>
+            <p className="text-[14px] font-normal text-[#374151]">Cities Covered</p>
+          </span>
+        </div>
+
+        <div className="flex flex-row gap-4 items-center py-2 px-4 border-solid border-y-0 border-l-0 border-r border-[#d1d5db]">
+          <img className="w-11" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADgElEQVR4nO1aS2gUQRDtSPygYkiy3RNDwAieco3gwc+KmGSqRoMXQVAv4tHo0WPEg59jRA8RZN2qxMPeBIk34w//GtGbgh+MUW8qKhijKzXbcTdx1E12djYT82Bgdnfm9XvT3VPV1avUHH5HgjuW6zTuNoxpTXhTMzzTDJ/tIec3DMFZw7hLrlUzCllVlWD0DONlw5idyqEJBhNpF4Wjoh502l2nGR7nxcFHTXBeM3Y5hGucVEfz8t4ti+WQc/kuQbhfrpFr84bwke6DtdE76G2drxkOGYIxXwjjc03ewdrM5ppiKXQmudQwHNAEL+xD+G4Yelb1uAvLK75AgCa45DdO+M0wHGvJbF8wbcLBZLU8BE3w1fbQtTp2l6lyojG9rd4w3s31ArxM9HutYXHXp2G1IXxl587tmn6vVpUFg8lqQ3g91xPwpKEPV4TdhJPqaDaMT20bV6XNsNtQhvG4HcvDOoUNqkyoP9fZaAhH7DA7Eiq5Q7DJEP4wjKNRvF0SfbjBzr/vDnsbw2HNqipNeMdO7m4VETThYTsXb4VCaAi2WRMjDrUtURFB596Ob6Vtpw+2lExoCK7YWNEVisKptM1wwL7FLpVE5FCbsUFvtCnTXqciRk2/V+vHF4KxhjOunjaRYdhrh9VAqAqnpuGiaEiwu2f6LIPJankSdew2qQqhjt0mvzfKEVNig5bM9gV+AJTARPC65HyqUjoMw7Hf1g8ER8uquhw6TD5FKCDAkbKqDkuHYdxVcB64ootCfCH+paNQsw/JZyS3KZZgxhgh/CZ5We5Td/c8Q3B/ktN4GGE/G38oHiQ5c4MviIsRzGp22yWXOhV3I4bghBgZir0RxgdKM76LvxF4owqqF7E1ogm+qvHFS5yNGAmSs2KOENyXDydjb4ShR+m01zEr4ojKRfZ7sTVCMORH9l91JMbRGBoZTbC3fuJN5O4slmDGGKG85mACfzU2mQCGoxAfqg5ZhQU8iXDrsFHoaJG1spDk1snDcnPF1uxUeR1zmFztlA0m2e5TcYYhHLCJ4T4VVxj2Om1S+D7y2vOEolpQHCiy0GbY69SMn+Qe2dKOzsHfimrBhiYU2lakkosc2rrSIW/H+HDKDSk8HbmJPwex4J7J77cH/Y4fZH+kYv+KKNqIjdDjRjTBF397muCCbCpVYj+mmGicnQmZQgnROLgn5iL0/4CfkygiCjfaWEUAAAAASUVORK5CYII=" alt="headset"/>
+          <span className="flex flex-col">
+            <h1 className="text-[22px] text-[#16a34a] font-semibold">24/7</h1>
+            <p className="text-[14px] font-normal text-[#374151]">Support</p>
+          </span>
+        </div>
+
+        <div className="flex flex-row gap-4 items-center py-2 px-4">
+          <img className="w-11" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFU0lEQVR4nO1bS4gcZRDuGMHE15rZrn82cSAiEaME9SIIoosm2e2qXqMIe/OVaMzNm+9DPPo8CF6Cht2pmhEZ0Ih60ahxsyr4PIhksyYixPjAg9FEBbPGkerHPHvnsWY33T1T8MMw//9Xd31dj///q37LShAZwY+MULltY3zLSiMZoemOABAqW71E2YnRS4zQbE8CAOxebQR/CgT/sqcAMHl3k2H6LbD7qVWlTQM9A4Ap4HYjdFKFBaE3cqXxld7/qQegbC0DwSdCQUFwl7Vv+OywO9UADEzcepF+7UDl/7GZHmgck1oAoEDXGKHDvvB0IlvAsahxqQQAGO8CwT8D4Q9m2d0w39hUAZDlzecZpt0Ve2d6BUrD57ddLDHut5JORpzrKosbpjlg92GrF2jd8845RvBJdXLBlz+kYFi9QFl2N1RWc0z/aohrp/KpoIw4FxrGp4Hx70D470GckU7mGqYPO9gcTVuxpJ07z7LF2QaMP1dfFlnjfacsErs7HBLnWhD8uGZFdwDy7mi3fNoJGDsAhsS5UsOZ2niwjv/FCO2wSuPLF8IvMQCAv20tGcFTwUudBKbnulH35AFQGl8OebodGPdVj6tozjBO2kX3stPxiFgCYCadq4zQU8B0pLqKw780rJmie+np9OaxAGCdt3hxNnqhTOjr2pcGoe+A8aFcaSSzGN58SQEYfGnLBYPFsfV23hk2gvcZoRf0pBaE/mg4lf0VmF7MFugmDXWd8F6oIEsGgGHc3+rLANNXwPSsYdysGtE1//gDQG8HW9JZBQMYBYQeVIFXF8fs/80/7gAsNqUGANNZ9mY6xQDQknrz2AJgddnfB0D6AJRjBYBJiDNbRAAoEc5s0QGwluiF+gBIH4ByHwDpA1BeqnltyUivA8A0pweX3fanBgDI051G6I5u+1MDwEIpNQDkSiOZIG31uhYl6Lmfd/bn/94DjFsHiu6q1AGQK42vNEKPG6bfw8nzNzwGQo+snRheUXkg4w9G8GgiAciIkzOMX9Skp/eqFmg6S4XULM6gjF6uJWog9F7IHJg+HXx5yxrloeeDrc4IYwtARoUXPOoJJHjALtCN7ebY4t4AjN8GIBwJQWhFsQQgp2offnmhD6LydcH2uGn7q34gPDJXTag1h8QAYNTmPbXHb7TctLbPzjukZagVu1egCrhdCxZrHabO9UFoXcsTOwBy3sv7Dg8KeH1tX5adW2qyuXUNGB+tH4s3h46xVcY3dgDY4mzz7Z7eaZocmIWX8QkYheOjPH3oGEHcuxMDAGicFypnme6NEMjL+Q3tdqCWkWZytWS16WHs3h+A82piADBBLV5Uvj5KA1omT4tj6wM/MZMgAPC4DtDMb2Of1uM2+QDGKbuAGMVLeQQacDxxAKzeNXZuVD8wORoa650gnooqVvbK3ZIHAHkmoOo776AaRkbwmUATPm8cM5SnK/w+OpgcJyi0Zz4nWFt4HDKqOESmExHjdyTOCQLjVj904d7myf7SuBr66hziZxG83k9cGMz5CyHv4pGWvtRPxsfqbb/qA2wht36ss7FxIQRMb0bPj02bbhR0tm6PX7aWeZeTqvsEb6/QWNG5Jn/bYHibQwuiwv8r11ti3Cwl3cCoSvu2jVPzHHREXkQIhPdudALjJ+02Q3GhJtPITLoXa5V20HGo0RyimXhqf7ib7XBcKNI3ZBSEUBN8od5VE9AQqddXdKGjhyPq7UOHF375JAnf0jmunRheocdclRuZLRseU5sPy+K8EMn045m26659gBVB6geA6R5vncA4o3HfbzgDjK9pqGvc9upRmH8meOYF67BN/wesg4YW3mhqgQAAAABJRU5ErkJggg==" alt="external-increase-payment-2-kmg-design-detailed-outline-kmg-design" />
+          <span className="flex flex-col">
+            <h1 className="text-[22px] text-[#16a34a] font-semibold">99.9%</h1>
+            <p className="text-[14px] font-normal text-[#374151]">Built for every journey</p>
+          </span>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+function CompareVehicles() {
+  return(
+    <section className="w-full flex justify-center items-center pt-15 bg-[#f9fafb]">
+      <div className="w-[95%] flex flex-col gap-10 lg:flex-row justify-between py-10 rounded-2xl px-6 lg:px-12 lg:items-center" id="loud">
+        <div className="flex gap-2 w-full lg:w-100 flex-col">
+          <p className="text-[#16a34a] text-[13px] font-medium">WIDE NETWORK COVERAGE</p>
+          <h1 className="text-[24px] leading-8 lg:text-[32px] lg:leading-11.25 font-semibold text-[#111827]">Charging where you need it</h1>
+          <p className="lg:text-[15px] text-[16px] text-[#374151]">Our growing network ensures you're never far from a charge. Find stations across cities, highways, and destinations.</p>
+          <div className="flex gap-2">
+            <span className="flex justify-center items-center text-center py-3 flex-col gap-2">
+              <img className="w-8" src="data:image/png;base64,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" alt="place-marker--v1"></img>
+              <p className="font-medium text-[12px]">Real-time availability</p>
+            </span>
+            <span className="border-x border-y-o border-solid border-green-800 flex justify-center items-center text-center py-3 flex-col gap-2">
+              <img className="w-8" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACLUlEQVR4nO2YzU7jMBDH/QqweFqtlgPiWUD1VOy+DTwBEi+BgBkJ3gBOaBEVl90bHHgF4IbgwinIKUVAcGK3aTpN5y9ZlezpfPyScZwYo1KVCthdAWMWGAPT9vwg7DwftVQhOT8IOJIGIHZeXoAJpQBYAWQKgBVAFjsvL8CEUgBcc35whH+A8cIyPpcdKKoOIE2Psvx8LZbc3w71tipour1QgGXu/RrZLZ1srs664HHzs4S7ZVc+s+ReLLntH8e/f/p5S47zPxOe+iBD5+5s6NCRmbFi8vO1WOrv+Nr8/Apjv+AIGC+GAPo7nwIc9tYt432RpLvr0NaambFS8vO1vbXEecERED75xdGVLwZxJ5bxIR/kjv2cEaLY/Hxtb3fLo5G6q09bwTpBwEbW5FAAXwXaAqgAIACg4rtb4fubNPsaAGBSX0mzrw2ACSiUoBT7qDVQAKgAQAGgAjCJDhcKAAh5rKXa1wFgUBmQ3KVU+4kBtEkKgMdqASfqbK/vAtz8JpiVtUcoQSn2UWugAFABgAJABWASHS4UABDyWEu1rwPAoDKgvgvMhxQAj9UCTuzZviEAKHZTaxSAiXQ6bftJpAC45QAgbj9pMwCsLN4S/ms9APNB3f2etYTX+Rq5W3uA3YUB0I0pPhZAbF9N275MH22ji48AIPZs/02uuX1S8V4plCXrfaNjdzP67dAGRP/RzLm+3DXVVz61D+dmpBQf3YfzM/5H3fYqlcosul4B8UW4Tuw+vIAAAAAASUVORK5CYII=" alt="external-business-business-outline-others-phat-plus-15"></img>
+              <p className="font-medium text-[12px]">Easy booking & payments </p>
+            </span>
+            <span className="flex justify-center items-center text-center py-3 flex-col gap-2">
+              <img className="w-8" src="data:image/png;base64,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" alt="paper-plane--v1"></img>
+              <p className="font-medium text-[12px]">Route planning & optimization</p>
             </span>
           </div>
         </div>
@@ -129,10 +205,13 @@ function LandingPage() {
   );
 }
 
+
 export default function Charge() {
   return (
     <>
       <LandingPage />
+      <SubLand/>
+      <CompareVehicles/>
       <Name />
     </>
   );

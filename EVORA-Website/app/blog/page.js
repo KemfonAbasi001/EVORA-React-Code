@@ -41,7 +41,7 @@ const blogPosts = [
 function BlogCard({ image, tag, title, readTime, date }) {
   return (
     <div className="border-[#d1d5db] border rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer group flex flex-col h-full">
-      <div className="overflow-hidden w-full relative h-[200px] shrink-0">
+      <div className="overflow-hidden w-full relative h-50 shrink-0">
         <Image
           src={image}
           alt={title}
@@ -134,7 +134,7 @@ const trendingPosts = [
 function TrendingCard({ rank, image, title, readTime }) {
   return (
     <div className="border-[#d1d5db] border rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer group flex flex-col h-full">
-      <div className="overflow-hidden w-full relative h-[200px] shrink-0">
+      <div className="overflow-hidden w-full relative h-50 shrink-0">
         <Image
           src={image}
           alt={title}
@@ -193,10 +193,10 @@ function CompLanding() {
     <section className="w-full flex justify-center items-center py-14 lg:py-30 bg-[#f9fafb]" id="two">
       <div className="w-[95%]">
          <span className="w-full flex flex-col">
-            <h1 className="font-medium lg:text-[26px] text-[30px] lg:text-[45px] text-[#111827]">Latest Insights</h1>
+            <h1 className="font-medium text-[30px] lg:text-[45px] text-[#111827]">Latest Insights</h1>
             <p className="text-[17px] lg:text-[17px] text-[#374151] w-full lg:w-[40%]">News, innovation and stories shaping the future of electric mobility.</p>
 
-            <div className="relative w-full max-w-[430px] mt-6">
+            <div className="relative w-full max-w-107.5 mt-6">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-[#9ca3af] w-4.75 h-4.75" />
               <input
                 type="text"

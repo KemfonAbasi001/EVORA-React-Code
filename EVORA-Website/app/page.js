@@ -6,7 +6,13 @@ import two from '../public/imgtwo.png'
 import three from '../public/imgthree.png'
 import four from '../public/imgfour.png'
 
+import gtwelve from '../public/gtwelve.png'
+import gthirteen from '../public/gthirteen.png'
+
 import neww from '../public/new.png'
+
+
+import { Clock2 } from 'lucide-react'
 
 const vehicles = [
   { name: "Evora City", type: "Compact EV", image: one, price: "$12,650", fig: "120", amount: "40" },
@@ -101,6 +107,57 @@ function SubLand() {
 }
 
 
+const trendingPosts = [
+  { rank: 1, image: gtwelve, title: "How Charging Infrastructure is Evolving Worldwide", readTime: "6 min read" },
+  { rank: 2, image: gthirteen, title: "The Rise of Software Defined Vehicles", readTime: "6 min read" },
+];
+
+
+function TrendingCard({ rank, image, title, readTime }) {
+  return (
+    <div className="border-[#d1d5db] border rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer group flex flex-col h-full">
+      <div className="overflow-hidden w-full relative h-50 shrink-0">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+        <p className="text-[#10b981] bg-[#f9fafb] absolute top-4 lg:text-[14px] text-[17px] py-1.25 rounded-[5px] font-semibold px-3 left-4">
+          {rank}
+        </p>
+      </div>
+      <div className="py-4 px-4 flex gap-2.75 flex-col flex-1">
+        <h1 className="font-medium lg:text-[16px] text-[18.7px] text-[#111827] line-clamp-2">{title}</h1>
+        <span className="lg:text-[12px] text-[15.5px] text-normal flex justify-between mt-auto">
+          <p className="flex gap-1 justify-center items-center text-[#374151]">
+            <Clock2 className="w-3.5 h-3.5" /> {readTime}
+          </p>
+        </span>
+      </div>
+    </div>
+  );
+}
+
+
+function Trending() {
+  return (
+    <section className="w-full flex justify-center items-center py-13 bg-[#f9fafb]">
+      <div className="w-[95%] flex flex-col gap-6">
+        <span>
+          <h1 className="font-medium text-[27px] lg:text-[32px] text-[#111827]">Trending Insights</h1>
+          <p className="lg:text-[14px] text-[15px] text-[#374151]">Stay updated with the latest in electric mobility.</p>
+        </span>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch">
+          {trendingPosts.map((post) => (
+            <TrendingCard key={post.rank} {...post} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
 
 function VehicleCard({ name, type, image, price, fig, amount, selfHeight }) {
   return (
@@ -158,7 +215,7 @@ function Explore() {
           </a>
         </div>
 
-        <div className="grid girf-cols-1 lg:grid-cols-4 gap-5 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 items-stretch">
           {vehicles.map((vehicle, index) => (
             <VehicleCard
               key={index}
@@ -230,6 +287,7 @@ export default function Home() {
       <SubLand/>
       <Explore />
       <Why />
+      <Trending/>
     </>
   );
 }
