@@ -40,14 +40,14 @@ const milestones = [
 
 function ValueCards() {
   return (
-    <div className="py-8 px-4 sm:px-8 lg:px-15 gap-8 sm:gap-10 lg:gap-12 w-full flex flex-col sm:flex-row items-center sm:items-start justify-center">
+    <div className="py-8 px-4 sm:px-8 lg:px-15 gap-10 lg:gap-12 w-full flex flex-col sm:flex-row items-center sm:items-start justify-center">
       {values.map((value) => (
         <span key={value.title} className="flex flex-col gap-3 items-center text-center max-w-xs">
-          <div className="w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center bg-[#e5e7eb] rounded-full shadow-md">
-            <img className="w-8 h-8 sm:w-10 sm:h-10 object-contain" src={value.icon} alt={value.title} />
+          <div className="lg:w-20 w-30 h-30 lg:h-20 flex items-center justify-center bg-[#e5e7eb] rounded-full shadow-md">
+            <img className="lg:w-8 w-12 h-12 lg:h-8 object-contain" src={value.icon} alt={value.title} />
           </div>
-          <h1 className="text-[#111827] text-[16px] sm:text-[17px] font-medium">{value.title}</h1>
-          <p className="text-[14px] sm:text-[15px] text-[#374151]">{value.desc}</p>
+          <h1 className="text-[#111827] lg:text-[16px] text-[20px] font-medium">{value.title}</h1>
+          <p className="lg:text-[14px] text-[17px] text-[#374151]">{value.desc}</p>
         </span>
       ))}
     </div>
@@ -60,12 +60,12 @@ function AboutIntro() {
       <div className="w-full sm:w-[95%] max-w-5xl flex flex-col items-center gap-9">
         <div className="flex gap-2 w-full sm:w-[80%] lg:w-[40%] flex-col justify-center items-center text-center">
           <span className="flex flex-col gap-2">
-            <p className="text-[#16a34a] font-medium">Our Mission</p>
+            <p className="text-[#16a34a] font-medium text-[18px]">Our Mission</p>
             <h1 className="font-medium text-[26px] sm:text-[30px] lg:text-[35px] text-[#111827] leading-8.5 sm:leading-10 lg:leading-11.25">
               Building a Sustainable Future for All
             </h1>
           </span>
-          <p className="text-[14px] sm:text-[15px] text-[#374151]">
+          <p className="lg:text-[14px] text-[17px] text-[#374151]">
             We believe in a world where clean energy powers every journey. Through innovation,
             partnerships, and purpose-driven solutions, we're creating a greener tomorrow.
           </p>
@@ -81,7 +81,7 @@ function TeamSection() {
     <section className="w-full flex justify-center items-center px-4 pb-10 pt-20">
       <div className="w-full sm:w-[95%] max-w-5xl flex flex-col items-center gap-9">
         <span className="flex flex-col w-full sm:w-[70%] lg:w-[40%] gap-2 items-center text-center">
-          <p className="text-[#16a34a] font-medium">Our Journey</p>
+          <p className="text-[#16a34a] font-medium text-[17px] lg:text-[15px]">Our Journey</p>
           <h1 className="font-medium text-[26px] sm:text-[30px] lg:text-[35px] text-[#111827] leading-8.5 sm:leading-10 lg:leading-11.25">
             Milestones That Drive Us Forward
           </h1>
@@ -95,8 +95,8 @@ function TeamSection() {
                 item.filled ? "after:bg-[#16a34a]" : "after:bg-[#16a34a]"
               }`}
             >
-              <h1 className="text-[22px] sm:text-[25px] text-[#111827] font-medium">{item.year}</h1>
-              <p className="text-[#374151] text-[15px] sm:text-[16px]">{item.desc}</p>
+              <h1 className="lg:text-[22px] text-[25px] text-[#111827] font-medium">{item.year}</h1>
+              <p className="text-[#374151] lg:text-[15px] text-[18px]">{item.desc}</p>
             </span>
           ))}
         </div>
@@ -110,7 +110,7 @@ function PeopleSection() {
     <section className="w-full flex justify-center items-center px-4 py-20 bg-[#f9fafb]">
       <div className="w-full sm:w-[95%] max-w-5xl flex flex-col items-center gap-9">
         <span className="flex flex-col w-full sm:w-[70%] lg:w-[40%] gap-2 items-center text-center">
-          <p className="text-[#16a34a] font-medium">Leadership Team</p>
+          <p className="text-[#16a34a] font-medium text-[17px] lg:text-[15px]">Leadership Team</p>
           <h1 className="font-medium text-[26px] sm:text-[30px] lg:text-[35px] text-[#111827] leading-8.5 sm:leading-10 lg:leading-11.25">
             The People Behind Evora's Progress
           </h1>
@@ -126,10 +126,10 @@ function PeopleSection() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="flex gap-0.5 flex-col p-3.5 bg-white">
-                <h1 className="text-[16px] font-medium">{person.name}</h1>
-                <p className="text-[14px]">{person.role}</p>
-                <img className="w-6" src={linkedinIcon} alt="linkedin" />
+              <span className="flex lg:gap-0.5 gap-1 flex-col lg:p-3.5 p-5 bg-white">
+                <h1 className="lg:text-[16px] text-[23px] font-medium">{person.name}</h1>
+                <p className="lg:text-[14px] text-[20px]">{person.role}</p>
+                <img className="lg:w-6 w-10" src={linkedinIcon} alt="linkedin" />
               </span>
             </div>
           ))}
@@ -143,7 +143,7 @@ function LandingPage() {
   return (
     <section className="flex justify-center py-30" id="about">
       <div className="w-[93%] flex flex-col lg:flex-row lg:justify-between items-center gap-12 lg:gap-0">
-        <div className="gap-5 flex flex-col text-center lg:text-left items-center lg:items-start w-[40%]">
+        <div className="lg:gap-5 gap-3 flex flex-col text-center lg:text-left items-center lg:items-start w-full lg:w-[40%]">
           <h1 className="text-[38px] leading-12 lg:text-[53px] lg:leading-15 font-semibold text-[#111827]">
             Driving Change <span className="text-[#22c55e]">Together</span>
           </h1>

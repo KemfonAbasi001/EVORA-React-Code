@@ -32,9 +32,10 @@ function LandingPage() {
     >
       <div className="w-[93%] flex flex-col lg:flex-row lg:justify-between items-center gap-12 lg:gap-0">
         <div className="gap-2.5 flex flex-col text-center lg:text-left items-center lg:items-start">
-          <p className="text-[#374151] flex gap-.75 justify-center items-center bg-[#f3f4f6] text-[14px] py-1 font-medium rounded-2xl px-3.25">
+          <p className="text-[#374151] flex gap-.75 justify-center items-center bg-[#f3f4f6] lg:text-[14px] text-[17px] py-1 font-medium rounded-2xl px-3.25">
             <img className="w-5" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPElEQVR4nO2ZS2hTQRSGR20VFRFt5qRGXelGwQcWRFEpLtR7zo1a0Sr4wIUPxJUgCMVF3RQEFXxrodXeOWnFbLoSu2pFRVdu3fhC6mvnwler1cokMzaJqdqaxDuSD4aEO5d7z8/c/8ycGSHKlPm/kIG/DhiTsaCuSrgKtHkLJdN7YBqMJmi1cJFZybXTgemxFiGZPs1ojk8SzpGsHweMN7WIdMMu4SJS0ckhEbp5h4RrQAK3GwGfrZDqgOYJl5DKXyQZPxhfXDK/z4Rr5pYKn6RGQWEbMB21goQz9NRWSIXdqcAV3Z97xpsAiu6mRAW0UbiCVHTaZKfX09v8mVPb/Wmg6ItU2F/VsmGKcAFg2mnNHWF/lb4WYdqaHh3sFi4gE7TYmhsSuM9eB8arRsgREXZiQV2VZHz6k6EHxRhQ+NKIWyAcMHdPWgTe0+a2XRGOL0lnLnqlRYkwA0znbLBVHRtiOX0m7WKLCDMyoF3W3DLwVub227Qr2dsiwkqE40ukwo8m1e7N7bdpFxQO6AlShBHoWB8FRb1mNM7nuyeawG2m/44IJc01lTq4H0E211Tmuw0UtWaven/TFA5IhQ0l0wFMF425e/XIDHufokZg/DoSMVJRU0lESPZ32yov2u4v/esH9tRWANOtfKm7aAB7yyRTX6rmVrSnoKmb0+syUWzkVaoGxhfmWz5brHVZ8c2t8Lbxxd35yfrxBV2XKX9/YQL93UsVNY0o+6Tbo1nJ+on5nlfd6knJ+Nz4orkkItJCsEGnxhFlH6a+qFoz+ZdFF+O9QoxuUYAADxjz3vyTokuEFWC6YUbk4E99yttRWnOPEv0p6fkFFH2bdm3t7OF2VEpm7tEC7G8y6fnBcDsqUuFlEXaA6Yox8bGc7dKuks7cf0Vj41ip8I0OWC/v7WWp6JQT5rbIBK4wAb+wJW3mdmmozZ0JMB43/rjgnLkzkYwPUz4I/HXOmdsi27w5Zh32Th/g2LMQN8ydASTwsPFHEhhPOGXuTIYKI+rUk6FT5s46G9Q7JVm1t0PmzlMcDTpn7kxA4fWhpbtj5s7eFsK3zprbAkF8ufmc+vV/4Sqx1FECdUqFm/91LGXKiMLyHZOTQPm6+gTzAAAAAElFTkSuQmCC" alt="flash-on"></img>
-            100% Electric</p>
+            100% Electric
+          </p>
           <h1 className="text-[38px] leading-12 lg:text-[53px] lg:leading-15 font-semibold text-[#111827]">
             Drive the Future.
             <br />
@@ -174,14 +175,14 @@ function VehicleCard({ name, type, image, price, fig, amount, selfHeight }) {
         <Image src={image} alt={name} className="w-full" />
         <div className="flex justify-between ">
           <div className="flex gap-1 text-[#111827]">
-            <img className="w-7" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPElEQVR4nO2ZS2hTQRSGR20VFRFt5qRGXelGwQcWRFEpLtR7zo1a0Sr4wIUPxJUgCMVF3RQEFXxrodXeOWnFbLoSu2pFRVdu3fhC6mvnwler1cokMzaJqdqaxDuSD4aEO5d7z8/c/8ycGSHKlPm/kIG/DhiTsaCuSrgKtHkLJdN7YBqMJmi1cJFZybXTgemxFiGZPs1ojk8SzpGsHweMN7WIdMMu4SJS0ckhEbp5h4RrQAK3GwGfrZDqgOYJl5DKXyQZPxhfXDK/z4Rr5pYKn6RGQWEbMB21goQz9NRWSIXdqcAV3Z97xpsAiu6mRAW0UbiCVHTaZKfX09v8mVPb/Wmg6ItU2F/VsmGKcAFg2mnNHWF/lb4WYdqaHh3sFi4gE7TYmhsSuM9eB8arRsgREXZiQV2VZHz6k6EHxRhQ+NKIWyAcMHdPWgTe0+a2XRGOL0lnLnqlRYkwA0znbLBVHRtiOX0m7WKLCDMyoF3W3DLwVub227Qr2dsiwkqE40ukwo8m1e7N7bdpFxQO6AlShBHoWB8FRb1mNM7nuyeawG2m/44IJc01lTq4H0E211Tmuw0UtWaven/TFA5IhQ0l0wFMF425e/XIDHufokZg/DoSMVJRU0lESPZ32yov2u4v/esH9tRWANOtfKm7aAB7yyRTX6rmVrSnoKmb0+syUWzkVaoGxhfmWz5brHVZ8c2t8Lbxxd35yfrxBV2XKX9/YQL93UsVNY0o+6Tbo1nJ+on5nlfd6knJ+Nz4orkkItJCsEGnxhFlH6a+qFoz+ZdFF+O9QoxuUYAADxjz3vyTokuEFWC6YUbk4E99yttRWnOPEv0p6fkFFH2bdm3t7OF2VEpm7tEC7G8y6fnBcDsqUuFlEXaA6Yox8bGc7dKuks7cf0Vj41ip8I0OWC/v7WWp6JQT5rbIBK4wAb+wJW3mdmmozZ0JMB43/rjgnLkzkYwPUz4I/HXOmdsi27w5Zh32Th/g2LMQN8ydASTwsPFHEhhPOGXuTIYKI+rUk6FT5s46G9Q7JVm1t0PmzlMcDTpn7kxA4fWhpbtj5s7eFsK3zprbAkF8ufmc+vV/4Sqx1FECdUqFm/91LGXKiMLyHZOTQPm6+gTzAAAAAElFTkSuQmCC" alt="flash-on"></img>
+            <img className="lg:w-8 w-12 h-12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPElEQVR4nO2ZS2hTQRSGR20VFRFt5qRGXelGwQcWRFEpLtR7zo1a0Sr4wIUPxJUgCMVF3RQEFXxrodXeOWnFbLoSu2pFRVdu3fhC6mvnwler1cokMzaJqdqaxDuSD4aEO5d7z8/c/8ycGSHKlPm/kIG/DhiTsaCuSrgKtHkLJdN7YBqMJmi1cJFZybXTgemxFiGZPs1ojk8SzpGsHweMN7WIdMMu4SJS0ckhEbp5h4RrQAK3GwGfrZDqgOYJl5DKXyQZPxhfXDK/z4Rr5pYKn6RGQWEbMB21goQz9NRWSIXdqcAV3Z97xpsAiu6mRAW0UbiCVHTaZKfX09v8mVPb/Wmg6ItU2F/VsmGKcAFg2mnNHWF/lb4WYdqaHh3sFi4gE7TYmhsSuM9eB8arRsgREXZiQV2VZHz6k6EHxRhQ+NKIWyAcMHdPWgTe0+a2XRGOL0lnLnqlRYkwA0znbLBVHRtiOX0m7WKLCDMyoF3W3DLwVub227Qr2dsiwkqE40ukwo8m1e7N7bdpFxQO6AlShBHoWB8FRb1mNM7nuyeawG2m/44IJc01lTq4H0E211Tmuw0UtWaven/TFA5IhQ0l0wFMF425e/XIDHufokZg/DoSMVJRU0lESPZ32yov2u4v/esH9tRWANOtfKm7aAB7yyRTX6rmVrSnoKmb0+syUWzkVaoGxhfmWz5brHVZ8c2t8Lbxxd35yfrxBV2XKX9/YQL93UsVNY0o+6Tbo1nJ+on5nlfd6knJ+Nz4orkkItJCsEGnxhFlH6a+qFoz+ZdFF+O9QoxuUYAADxjz3vyTokuEFWC6YUbk4E99yttRWnOPEv0p6fkFFH2bdm3t7OF2VEpm7tEC7G8y6fnBcDsqUuFlEXaA6Yox8bGc7dKuks7cf0Vj41ip8I0OWC/v7WWp6JQT5rbIBK4wAb+wJW3mdmmozZ0JMB43/rjgnLkzkYwPUz4I/HXOmdsi27w5Zh32Th/g2LMQN8ydASTwsPFHEhhPOGXuTIYKI+rUk6FT5s46G9Q7JVm1t0PmzlMcDTpn7kxA4fWhpbtj5s7eFsK3zprbAkF8ufmc+vV/4Sqx1FECdUqFm/91LGXKiMLyHZOTQPm6+gTzAAAAAElFTkSuQmCC" alt="flash-on"></img>
             <span>
               <p className="text-[19px] font-medium lg:text-[13px]">{fig} Km</p>
               <p className="lg:text-[12px] text-[15px]">Range</p>
             </span>
           </div>
           <div className="flex gap-1 text-[#111827]">
-            <img className="w-8" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABlklEQVR4nO3XPUvDQBgH8Jv8CE/xA7i4iOhoB8eUWhzsKNLNIgq+FMEPoJOC/QiJi4IWrIMVR2s614KLgkOrVKgF36BRObmgIEK8u9gkd/T5w20X8vySXO45QjAYzL8DllEGK0Glhpk4I6pEuvivQVTJd0GiQUDPAoCzWGUBEPbi/uvGqVJOGDBRykWzuEHyScsGEMAJAjgBBHCCAFUA0KWRPF7RG5D6tfnhJ8QLAjgBBHDScwC7WaMjhQxdtLf1A1y2b+jAbtqd37+T1Atw99qiwwcz0qc1UAHw6LzQ8aM5X8dNiBrgfLzRqdM13+dliBqwZOc92wYtAGOHs54A9jdaON+iFw/X6gKqrSs6X950i/WCxItZdQE/4wVYruT1BUyerNLOu6MnIF7M0nbnSegaohpgaH+a1p/vha8hKgBY+8DmsnaCtRUyaKICgO0Jo4WM29CJBlQC+AkggBMEqAKoSCxM0djNWniAoAcJKjHTuA26+JhlNAIDgGlshPAG1gMDDO6l+1yEaTS6X7hRZ8Wze8gU9QkhX6c8XVXMmAAAAABJRU5ErkJggg==" alt="battery"></img>
+            <img className="lg:w-8 w-12 h-12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABlklEQVR4nO3XPUvDQBgH8Jv8CE/xA7i4iOhoB8eUWhzsKNLNIgq+FMEPoJOC/QiJi4IWrIMVR2s614KLgkOrVKgF36BRObmgIEK8u9gkd/T5w20X8vySXO45QjAYzL8DllEGK0Glhpk4I6pEuvivQVTJd0GiQUDPAoCzWGUBEPbi/uvGqVJOGDBRykWzuEHyScsGEMAJAjgBBHCCAFUA0KWRPF7RG5D6tfnhJ8QLAjgBBHDScwC7WaMjhQxdtLf1A1y2b+jAbtqd37+T1Atw99qiwwcz0qc1UAHw6LzQ8aM5X8dNiBrgfLzRqdM13+dliBqwZOc92wYtAGOHs54A9jdaON+iFw/X6gKqrSs6X950i/WCxItZdQE/4wVYruT1BUyerNLOu6MnIF7M0nbnSegaohpgaH+a1p/vha8hKgBY+8DmsnaCtRUyaKICgO0Jo4WM29CJBlQC+AkggBMEqAKoSCxM0djNWniAoAcJKjHTuA26+JhlNAIDgGlshPAG1gMDDO6l+1yEaTS6X7hRZ8Wze8gU9QkhX6c8XVXMmAAAAABJRU5ErkJggg==" alt="battery"></img>
             <span>
               <p className="text-[19px] font-medium lg:text-[13px]">{amount} KWh</p>
               <p className="lg:text-[12px] text-[15px]">Battery</p>
@@ -189,7 +190,7 @@ function VehicleCard({ name, type, image, price, fig, amount, selfHeight }) {
           </div>
         </div>
         <span className="flex justify-between mt-2">
-          <p className="text-[#111827] text-[18.7px] lg:text-[14px] font-medium">From <span className="font-semibold">{price}</span></p>
+          <p className="text-[#111827] text-[19px] lg:text-[14px] font-medium">From <span className="font-semibold">{price}</span></p>
           <a href="" className="text-[#16a34a] text-[15.8px] lg:text-[12px] font-medium flex justify-center items-center gap-.75">
             View Details
             <img className="w-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+0lEQVR4nO3YP04CURDH8VfpBZjZC1BRWlpbvBn+dDQSCpELcYSd2cp7WBEKGg5ARULtHwqVrInRBCwMCTLk90mm3nyTzex7mxIAAAAAwKkh02s2mX1O2b5JUZHLgl0/6iGTTWG5myIi0+VXSOgYruSWXd52YirppGjI5G5fDHu7l6JBTLSYIuICQMxfUKlDMln/fMAxh1xfyDSnQ7Qe+hdk8vxfEfwd83rQd6Y5yZfk8hQ+pMaWB2SyCv1qHVPD8yj80eXXCAu0fgvTe0ScAnYZhz9n8TlEUKlDNn0PvZ3O6qpLrvPwEbWGd67Y5ZFdp6F/BwEAAABACmcLFyT5NNBocPwAAAAASUVORK5CYII=" alt="right--v1" />
@@ -207,9 +208,9 @@ function Explore() {
         <div className="flex flex-col gap-5 lg:flex-row justify-between">
           <span>
             <h1 className="font-medium text-[27px] lg:text-[32px] text-[#111827]">Explore Our Vehicles</h1>
-            <p className="lg:text-[14px] text-[15px] text-[#374151]">Built for every need. Designed for the future.</p>
+            <p className="lg:text-[14px] text-[16px] text-[#374151]">Built for every need. Designed for the future.</p>
           </span>
-          <a href="" className="lg:text-[14px] text-[16px] self-end flex gap-1.5 font-medium text-[#16a34a] w-fit h-fit justify-center items-center">
+          <a href="" className="lg:text-[14px] text-[17px] self-end flex gap-1.5 font-medium text-[#16a34a] w-fit h-fit justify-center items-center">
             View All Vehicles
             <img className="w-2.5" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNElEQVR4nO2Wv0oDQRDGVzG24SQz29jYWNjmARJBNDOHWEhawSfwEWKltWXKm1GLA58hlZUPoSj4B8uIVfQkKoi5w8rZFckHU/92lm9mPuem+gsCSbsg9IhKdyC0G4ZauJkPKBdfRXn9JE3M2aD88B3MBQhfN7JOyxSMGW+B8tMkHJVeUPnA9Zs1M7iXzSVUOi/D3+uikdGyGdwNWnOgtI9Co/LX0zMq7dnBnXP+mFdR+Ka6ezpbzNcXzOBJvlYHodMq+Nh4XtO2sxQI7aDwsPQA4VdUOlrJu/P/1Hj9Zg2FDj9HbLL7IWTphh38B+OB0JUtWNN2JVj50oYY46t9DHNB6HFKYiwQH3xlDiIcCR/HQNypNJB1EEDh2/AXqNebLWeuUGFPaBuE7sf7Nly8ncr9rt4A1MJW0qxDfyYAAAAASUVORK5CYII=" alt="more-than"></img>
           </a>
