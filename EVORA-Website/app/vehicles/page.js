@@ -102,7 +102,7 @@ function OurVehicles() {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-stretch">
             {filteredVehicles.length > 0 ? (
               filteredVehicles.map((vehicle, index) => (
                 <VehicleCard key={index} {...vehicle} />
